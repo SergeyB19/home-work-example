@@ -39,6 +39,49 @@ public class Main {
         int grPerKg = 1000;
         float totalWeighKilogram = totalWeightSportsBreakfast / grPerKg;
         System.out.println("Общий вес завтрака " + totalWeighKilogram+ " кг");
+        // задание №4
+        int weight = 7;
+        int gramsInKg = 1000;
+        int weightInGrams = weight*gramsInKg;
+
+        int minGramsPerDay = 250;
+        int maxGramsPerDay = 500;
+
+        int minDays =  weightInGrams / maxGramsPerDay;
+        int maxDays = weightInGrams / minGramsPerDay;
+
+        double avgDays = (minDays+maxDays)/(2*1.0);
+        System.out.println("Min " + minDays);
+        System.out.println("Max " + maxDays);
+        System.out.println("Avg " + avgDays);
+
+        // задание №5
+        int percent = 10;
+        double multiplier = percent/(100*1.0);
+
+        int mashaSalary = 67_760;
+        int denisSalary = 83_690;
+        int kristinaSalary = 76_230;
+
+        int mashaNewSalary = (int) (mashaSalary + (mashaSalary*multiplier));
+        int denisNewSalary = (int) (denisSalary + (denisSalary*multiplier));
+        int kristinaNewSalary = (int) (kristinaSalary + (kristinaSalary*multiplier));
+
+        int mashaDifferense = mashaNewSalary * 12 - mashaSalary * 12;
+        int denisDifferense = (denisNewSalary - denisSalary) * 12;
+        int kristinaDifferense = (kristinaNewSalary - kristinaSalary) * 12;
+
+        System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaDifferense + " Рублей");
+        System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisDifferense + " Рублей");
+        System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaDifferense + " Рублей");
+
+
+
+
+
+
+
+
 
 
 
